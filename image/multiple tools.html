@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <select id="operation">
+            <option>add</option>
+            <option>sub</option>
+            <option>mul</option>
+            <option>div</option>
+        </select>
+        <input type="text" id="name">
+        <input type="text" id="name1">
+      <input type="radio" id="decimal" value="operator" name="decimal">  decimal
+        <input type="radio" id="integer" value="operator" name="integer"> integer
+       <input type="checkbox" id="checkbox">clear after operation
+      <input type="button" onclick="sai()" value="submit">
+      <p id="result"></p>
+      <script>
+        function sai(){
+            n1=parseFloat(getElementById("name").value)
+            n2=parseFloat(getElementById("name1").value)
+            operation=listbox.options[listbox.selectedIndex[.value]]
+            check=document.getElementById("checkbox")
+            radio=documen.getElementById("radio1")
+            radio1=documen.getElementById("radio2")
+            result=document.getElementById("result")
+switch(operation){
+    case 'add':
+        result=n1+n2
+        break
+}
+document.getElementById("result").innerHTML=result
+if(integer){
+    result=parseInt(result)
+}
+        }
+      </script>
+    </body>
+</html> 

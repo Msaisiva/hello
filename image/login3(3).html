@@ -1,0 +1,39 @@
+<html>
+    <body>
+
+       first name :<input type="text" placeholder="FIRST NAME" id="name"><br><br>
+       Last  name :<input type="text" placeholder="LAST NAME" id="name1"><br><br>
+      email: <input type="text" placeholder="EMAIL" id="email"><br><br>
+       number: <input type="text"placeholder="NUMBER" id="number"><br><br>
+        adress:<input type ='text' placeholder="adress" id="adress"><br>
+        gender: <input type ="radio" id="radio" value="radio"> male
+        <input type ="radio" id="radio1" value="radio"> female<br>
+       course: <select id="operator">
+            <option>html</option>
+            <option>css</option>
+            <option>js</option>
+        </select><br><br><br>
+        <input type="button" onclick="sai()" value="submit">
+       <p id="result"></p>
+   </center> 
+        <script>
+            function sai(){
+            a=document.getElementById("name").value
+            a1=document.getElementById("name1").value
+            b=document.getElementById("email").value
+            c=parseInt(document.getElementById("number").value)
+            d=document.getElementById("adress").value
+            e=document.getElementById("radio").value
+            f=document.getElementById("radio1").value
+            g=document.getElementById("operator").value
+            
+document.getElementById("result").innerHTML= "<h1>"+"first name:"+a+"<h1>"+"las tname:"+a1+'<br>'+'<h1>'+"email:"+b+'<br>'+'number:'+c+'<br>'+"adress:"+d+'<br>'+
+        "male"+e+'<br>'+ "female:"+f+'<br>'+ "operator:"+g
+
+            }
+        </script>
+    </body>
+</html>
+
+</body>
+</html>
